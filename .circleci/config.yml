@@ -4,13 +4,6 @@ version: 2.1
  
 workflows: 
   sample:
-    triggers:
-      - schedule:
-          cron: "* 1 * * *"
-          filters:
-            branches:
-              only:
-                - circleci-project-setup
     jobs: 
       - job
  
